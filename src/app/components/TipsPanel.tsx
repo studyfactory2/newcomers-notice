@@ -32,7 +32,12 @@ export default function TipsPanel({ title, items }: TipsPanelProps) {
       <Typography
         variant="h2"
         component="h2"
-        sx={{ textAlign: "center", color: brand.gold, mb: { xs: 2.5, md: 3 }, position: "relative" }}
+        sx={{
+          textAlign: "center",
+          color: brand.gold,
+          mb: { xs: 2.5, md: 3 },
+          position: "relative",
+        }}
       >
         {title}
       </Typography>
@@ -70,8 +75,19 @@ export default function TipsPanel({ title, items }: TipsPanelProps) {
             >
               {i + 1}
             </Box>
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 1, minWidth: 0 }}>
-              <Typography variant="body1" sx={{ color: "rgba(255,255,255,0.92)" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: 1,
+                minWidth: 0,
+              }}
+            >
+              <Typography
+                variant="body1"
+                sx={{ color: "rgba(255,255,255,0.92)" }}
+              >
                 {tip.text}
               </Typography>
               <Chip
@@ -93,7 +109,13 @@ export default function TipsPanel({ title, items }: TipsPanelProps) {
   );
 }
 
-function decoCircle(pos: { top?: number; bottom?: number; left?: number; right?: number; size: number }) {
+function decoCircle(pos: {
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
+  size: number;
+}) {
   return {
     position: "absolute",
     width: pos.size,

@@ -6,13 +6,19 @@ import { callout } from "../theme/palette";
 type NoticeImageProps = { image: NoticeImageType; align?: "left" | "center" };
 
 /** Responsive image with optional caption; renders a dashed placeholder when src is missing. */
-export default function NoticeImage({ image, align = "center" }: NoticeImageProps) {
+export default function NoticeImage({
+  image,
+  align = "center",
+}: NoticeImageProps) {
   const { src, alt, caption, maxWidth = 520 } = image;
 
   return (
     <Box sx={{ mt: 1.5 }}>
       {caption && (
-        <Typography variant="body2" sx={{ fontWeight: 700, color: callout.note.text, mb: 1 }}>
+        <Typography
+          variant="body2"
+          sx={{ fontWeight: 700, color: callout.note.text, mb: 1 }}
+        >
           {caption}
         </Typography>
       )}

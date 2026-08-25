@@ -26,13 +26,23 @@ export default function StoreCard({ store }: StoreCardProps) {
         boxShadow: "0 6px 20px rgba(27,36,55,0.08)",
         p: { xs: 2, sm: 2.5 },
         transition: "transform .2s ease, box-shadow .2s ease",
-        "&:hover": { transform: "translateY(-2px)", boxShadow: "0 10px 26px rgba(27,36,55,0.12)" },
+        "&:hover": {
+          transform: "translateY(-2px)",
+          boxShadow: "0 10px 26px rgba(27,36,55,0.12)",
+        },
       }}
     >
       {/* gold accent bar */}
       <Box
         aria-hidden
-        sx={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 5, bgcolor: brand.gold }}
+        sx={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          bottom: 0,
+          width: 5,
+          bgcolor: brand.gold,
+        }}
       />
 
       <Stack
@@ -63,20 +73,38 @@ export default function StoreCard({ store }: StoreCardProps) {
           <Typography
             variant="caption"
             component="div"
-            sx={{ fontWeight: 700, letterSpacing: "0.04em", color: brand.textMuted, mb: 0.25 }}
+            sx={{
+              fontWeight: 700,
+              letterSpacing: "0.04em",
+              color: brand.textMuted,
+              mb: 0.25,
+            }}
           >
             {store.platform}
           </Typography>
-          <Typography variant="h3" component="p" sx={{ color: "text.primary", lineHeight: 1.3 }}>
+          <Typography
+            variant="h3"
+            component="p"
+            sx={{ color: "text.primary", lineHeight: 1.3 }}
+          >
             {store.name}
           </Typography>
           {store.description && (
-            <Typography variant="body2" sx={{ color: "text.secondary", mt: 0.5 }}>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", mt: 0.5 }}
+            >
               {store.description}
             </Typography>
           )}
           {store.tags && store.tags.length > 0 && (
-            <Stack direction="row" spacing={0.75} useFlexGap flexWrap="wrap" sx={{ mt: 1 }}>
+            <Stack
+              direction="row"
+              spacing={0.75}
+              useFlexGap
+              flexWrap="wrap"
+              sx={{ mt: 1 }}
+            >
               {store.tags.map((tag) => (
                 <Chip
                   key={tag}

@@ -37,7 +37,11 @@ export default function CalloutBox({ tone, title, lines }: CalloutBoxProps) {
         </Typography>
       )}
       {lines.map((line, i) => (
-        <Typography key={i} variant="body1" sx={{ color: "inherit", "& strong": { color: "inherit" } }}>
+        <Typography
+          key={i}
+          variant="body1"
+          sx={{ color: "inherit", "& strong": { color: "inherit" } }}
+        >
           {line}
         </Typography>
       ))}

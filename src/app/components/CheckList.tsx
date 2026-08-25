@@ -10,8 +10,16 @@ export default function CheckList({ items }: CheckListProps) {
   return (
     <Stack component="ul" spacing={1} sx={{ listStyle: "none", m: 0, p: 0 }}>
       {items.map((item, i) => (
-        <Box component="li" key={i} sx={{ display: "flex", gap: 1.25, alignItems: "flex-start" }}>
-          <Box component="span" aria-hidden sx={{ fontWeight: 800, lineHeight: 1.75, flexShrink: 0 }}>
+        <Box
+          component="li"
+          key={i}
+          sx={{ display: "flex", gap: 1.25, alignItems: "flex-start" }}
+        >
+          <Box
+            component="span"
+            aria-hidden
+            sx={{ fontWeight: 800, lineHeight: 1.75, flexShrink: 0 }}
+          >
             ✔
           </Box>
           <Box sx={{ minWidth: 0 }}>

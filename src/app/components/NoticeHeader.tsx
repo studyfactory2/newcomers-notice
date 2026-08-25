@@ -21,12 +21,20 @@ export default function NoticeHeader({ title, subtitle }: NoticeHeaderProps) {
       }}
     >
       <Container>
-        <Typography variant="h1" component="h1" sx={{ mb: { xs: 1.25, md: 1.75 } }}>
+        <Typography
+          variant="h1"
+          component="h1"
+          sx={{ mb: { xs: 1.25, md: 1.75 } }}
+        >
           {title}
         </Typography>
         <Typography
           variant="subtitle1"
-          sx={{ color: brand.gold, fontWeight: 500, fontSize: { xs: "0.95rem", md: "1.05rem" } }}
+          sx={{
+            color: brand.gold,
+            fontWeight: 500,
+            fontSize: { xs: "0.95rem", md: "1.05rem" },
+          }}
         >
           {subtitle}
         </Typography>

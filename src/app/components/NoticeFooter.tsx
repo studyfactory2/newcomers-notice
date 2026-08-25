@@ -25,7 +25,11 @@ export default function NoticeFooter({ lines }: NoticeFooterProps) {
             key={i}
             variant="h3"
             component="p"
-            sx={{ fontWeight: 600, fontSize: { xs: "1rem", sm: "1.15rem", md: "1.25rem" }, lineHeight: 1.7 }}
+            sx={{
+              fontWeight: 600,
+              fontSize: { xs: "1rem", sm: "1.15rem", md: "1.25rem" },
+              lineHeight: 1.7,
+            }}
           >
             {line}
           </Typography>
