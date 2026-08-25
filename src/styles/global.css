@@ -1,0 +1,13 @@
+/* Minimal globals — everything else lives in the MUI theme. */
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #f5b942;
+  color: #1b2437;
+}

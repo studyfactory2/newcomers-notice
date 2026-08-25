@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200">
+  <rect width="360" height="200" rx="12" fill="#fff" stroke="#F4E3A6"/>
+  <g font-family="Noto Sans KR, Apple SD Gothic Neo, sans-serif" text-anchor="middle">
+    <rect x="20" y="20" width="320" height="40" rx="20" fill="#F0F3F7"/>
+    <text x="180" y="46" font-size="14" fill="#4B5563">🔍 손찬반찬백화점 센텀점</text>
+    <rect x="20" y="80" width="320" height="80" rx="10" fill="#FFF8E1"/>
+    <text x="180" y="112" font-size="16" font-weight="700" fill="#1F2937">손찬반찬백화점 센텀점</text>
+    <text x="180" y="138" font-size="12" fill="#8A94A6">쿠팡이츠 매장 화면 예시</text>
+    <text x="180" y="185" font-size="11" fill="#8A94A6">※ 실제 스크린샷으로 교체해 주세요</text>
+  </g>
+</svg>

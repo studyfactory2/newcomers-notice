@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+  <rect width="520" height="220" rx="12" fill="#FFF8E1" stroke="#F4E3A6"/>
+  <g font-family="Noto Sans KR, Apple SD Gothic Neo, sans-serif" text-anchor="middle" fill="#5B4300">
+    <rect x="40" y="30" width="200" height="140" rx="10" fill="#fff" stroke="#E5E9F0"/>
+    <text x="140" y="70" font-size="34">🌐</text>
+    <text x="140" y="110" font-size="14" font-weight="700">삼성 인터넷</text>
+    <text x="140" y="135" font-size="12">주소창 → 메뉴 → 홈 화면에 추가</text>
+    <rect x="280" y="30" width="200" height="140" rx="10" fill="#fff" stroke="#E5E9F0"/>
+    <text x="380" y="70" font-size="34">🧭</text>
+    <text x="380" y="110" font-size="14" font-weight="700">아이폰 Safari</text>
+    <text x="380" y="135" font-size="12">공유 버튼 → 홈 화면에 추가</text>
+    <text x="260" y="200" font-size="12" fill="#8A94A6">※ 예시 이미지 — 실제 스크린샷으로 교체해 주세요</text>
+  </g>
+</svg>
