@@ -361,7 +361,15 @@ export const noticeContent: NoticeContent = {
           type: "paragraph",
           text: (
             <>
-              <B>매일 1회 아침 10시 45분까지</B> 받습니다.
+              <B>매일 2회</B> 받습니다.
+            </>
+          ),
+        },
+        {
+          type: "paragraph",
+          text: (
+            <>
+              점심 주문은 당일 아침 <B>10:45까지</B> 신청, 저녁 주문은 당일 <B>16:30까지</B> 주문 주세요.
             </>
           ),
         },
@@ -383,7 +391,7 @@ export const noticeContent: NoticeContent = {
             ),
             href: LINKS.coupangEatsStore,
             ctaLabel: "쿠팡이츠에서 메뉴 보기",
-            tags: ["매일 10:45 마감", "일요일 휴무", "카카오페이 송금"],
+            tags: ["점심 10:45 마감", "저녁 16:30 마감", "일요일 휴무", "카카오페이 송금"],
           },
         },
         { type: "paragraph", text: "*반찬가게와 자격증공장은 아무 관련 없습니다^^;; 좋은 곳 있으면 추천주세요.", emphasis: "muted" },
